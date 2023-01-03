@@ -1,12 +1,18 @@
-body {font-family: 'roboto', sans-serif;}
-.list{list-style: none;}
-.link{text-decoration: none;}
+
 :root {
     --subtitle-color: #2E2F42 ;
     --text-color: #434455;
     --accent-color: #4D5AE5;
-    --font-more: 'Raleway' sans-serif;
+    --font-more: 'Raleway', sans-serif;
+    --font-main: 'roboto', sans-serif;
 }
+body {background-color: #FFFFFF;
+    font-family: var(--font-main)}
+    
+.list{list-style: none;}
+.link{text-decoration: none;
+}
+
 .btn-body {
 font-family: inherit;
 font-weight: 500;
@@ -25,32 +31,27 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 color:var(--subtitle-color);
 }
+.logo{
+    font-family: var(--font-more);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
 /* ---------------------------------HEDER------------------------------------------ */
 /* .header {
 }
 .header-navigation {
 } */
 .logotype {
-font-family: var(--font-more);
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 1.33;
-display: flex;
-align-items: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
 color: var(--accent-color);
 }
 .studio{
-font-weight: 800;
-font-size: 18px;
-line-height: 1.33;
-display: flex;
-align-items: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #2E2F42;
+    line-height: 1.33;
+    color: #2E2F42;
 }
 /* .menu-header-list {
 } */
@@ -104,7 +105,8 @@ color: #FFFFFF;
 background: var(--accent-color);
 cursor: pointer;
 }
-.type-button:hover {
+.type-button:hover,
+.type-button:focus {
 background: #404BBF;
 }
 /* ------------------------------Feature------------------------------------- */
@@ -172,15 +174,8 @@ color: var(--text-color);
 background: #2E2F42;
 }
 .studio-footer {
-font-family: var(--font-more);
-font-weight: 800;
-font-size: 18px;
-line-height: 1.33;
-display: flex;
-align-items: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #F4F4FD;;
+    line-height: 1.16;
+color: #F4F4FD;
 }
 .footer-text {
 color: #E7E9FC; 
@@ -198,7 +193,8 @@ border-radius: 4px;
 cursor: pointer;
 
 }
-.btn:hover
+.btn:hover,
+.btn:focus
 {color: #FFFFFF;
 background: #404BBF;
 }
